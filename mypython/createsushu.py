@@ -40,3 +40,17 @@ def hello(t):
 
 
 print(hello([1, 2, 3]))
+
+
+class MyClass:
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
+
+    def __mycacl__(self):
+        return self.x + self.y
+
+
+dia = MyClass(3,4)
+
+print(dia.__mycacl__())
